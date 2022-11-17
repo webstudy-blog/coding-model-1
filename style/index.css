@@ -5,7 +5,7 @@
   height: 80px;
   width: 100%;
   background: var(--color-white);
-  box-shadow: var(--box-shadow);
+  box-shadow: var(--shadow);
   position: fixed;
   top: 0;
   z-index: var(--z-index-header);
@@ -57,13 +57,13 @@
   text-shadow: var(--shadow);
 }
 .catch-copy h2 {
-  font-size: var(--font-size-xxxl);
+  font-size: var(--font-size-mainvisual-title);
   font-weight: 900;
   margin-bottom: 16px;
   letter-spacing: 0.1em;
 }
 .catch-copy p {
-  font-size: var(--font-size-xxl);
+  font-size: var(--font-size-mainvisual-subtitle);
   font-weight: 700;
 }
 
@@ -115,4 +115,29 @@
   height: 6px;
   background: var(--color-primary);
   transform: translateX(calc((100% + 16px) * -1)) translateY(12px);
+}
+
+.about {
+  background: var(--color-accent);
+}
+.about * {
+  color: var(--color-white);
+}
+.about h2 {
+  text-align: center;
+}
+.about h3 {
+  font-size: var(--font-size-xxl);
+  margin-bottom: 16px;
+}
+.about p {
+  font-size: var(--font-size-md);
+  margin-bottom: 72px;
+}
+.about span {
+  display: inline-block;
+}
+.about-contents {
+  margin-inline: auto;
+  max-width: 680px;
 }

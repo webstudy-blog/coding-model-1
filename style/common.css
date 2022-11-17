@@ -9,8 +9,11 @@
   --font-size-md: 1.125rem;
   --font-size-lg: 1.25rem;
   --font-size-xl: 1.5rem;
-  --font-size-xxl: 2.5rem;
-  --font-size-xxxl: 4.5rem;
+  --font-size-xxl: 2rem;
+  --font-size-xxxl: 3rem;
+
+  --font-size-mainvisual-title: 4.5rem;
+  --font-size-mainvisual-subtitle: 2.5rem;
 
   --color-white: #ffffff;
   --color-text: #222222;
@@ -30,4 +33,24 @@ html {
   color: var(--color-text);
   letter-spacing: 0.05em;
   box-sizing: border-box;
+}
+
+.section-wrap {
+  padding: 120px;
+}
+.section-title {
+  font-size: var(--font-size-xxxl);
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+.detail-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 340px;
+  height: 80px;
+  border: 1px solid var(--color-white);
+  font-size: var(--font-size-lg);
+  font-weight: bold;
+  margin-inline: auto;
 }
