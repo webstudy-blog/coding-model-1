@@ -1,0 +1,118 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  background: var(--color-white);
+  box-shadow: var(--box-shadow);
+  position: fixed;
+  top: 0;
+  z-index: var(--z-index-header);
+}
+
+.logo {
+  font-size: var(--font-size-lg);
+  font-family: var(--font-family-logo);
+  margin-inline: 100px;
+}
+.nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.nav li,
+.nav li a {
+  height: 100%;
+  text-transform: uppercase;
+}
+.nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: var(--font-size-md);
+  padding-inline: 20px;
+}
+.nav li:last-child a {
+  margin-left: 40px;
+  width: 300px;
+  background: var(--color-accent);
+  color: var(--color-white);
+}
+
+.mainvisual {
+  height: 800px;
+  background-image: url(../images/mainvisual.jpg);
+  background-size: cover;
+  position: relative;
+}
+.catch-copy {
+  position: absolute;
+  top: 40%;
+  left: 120px;
+}
+.catch-copy * {
+  color: var(--color-white);
+  text-shadow: var(--shadow);
+}
+.catch-copy h2 {
+  font-size: var(--font-size-xxxl);
+  font-weight: 900;
+  margin-bottom: 16px;
+  letter-spacing: 0.1em;
+}
+.catch-copy p {
+  font-size: var(--font-size-xxl);
+  font-weight: 700;
+}
+
+.notice {
+  position: absolute;
+  bottom: 20%;
+  right: 0;
+  height: 64px;
+}
+.notice * {
+  height: 100%;
+}
+.notice a {
+  display: flex;
+  font-weight: bold;
+}
+.notice-date {
+  width: 225px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-primary);
+  font-size: var(--font-size-md);
+}
+.notice-title {
+  width: 445px;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  background: var(--color-white);
+  font-size: var(--font-size-sm);
+}
+
+.scrollbar {
+  letter-spacing: 0.1em;
+  font-size: var(--font-size-md);
+  font-weight: 900;
+  position: absolute;
+  bottom: 0;
+  left: 120px;
+  pointer-events: none;
+  transform: rotate(-90deg) translateX(50%);
+  transform-origin: left top;
+}
+.scrollbar::before {
+  content: '';
+  display: block;
+  width: 120px;
+  height: 6px;
+  background: var(--color-primary);
+  transform: translateX(calc((100% + 16px) * -1)) translateY(12px);
+}
