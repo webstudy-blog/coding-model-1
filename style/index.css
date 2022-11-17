@@ -35,6 +35,7 @@
   font-weight: 700;
   font-size: var(--font-size-md);
   padding-inline: 20px;
+  background: var(--color-white);
 }
 .header-nav li:last-child a {
   margin-left: 40px;
@@ -229,8 +230,8 @@
 }
 .voice-links a:nth-of-type(2) {
   background-image: linear-gradient(
-      rgba(0, 184, 64, 0.8),
-      rgba(0, 184, 64, 0.8)
+      rgba(0, 184, 64, 0.6),
+      rgba(0, 184, 64, 0.6)
     ),
     url('../images/ask-employee.jpg');
 }
