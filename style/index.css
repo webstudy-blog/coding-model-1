@@ -174,3 +174,31 @@
 .work-item p {
   font-size: var(--font-size-md);
 }
+
+.faq {
+  background: var(--color-primary);
+}
+.faq summary {
+  font-size: var(--font-size-xxl);
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+.faq summary::marker {
+  content: '';
+}
+.faq details {
+  font-weight: bold;
+  margin-bottom: 48px;
+}
+.faq details span {
+  font-size: var(--font-size-xxl);
+}
+.faq a {
+  background: var(--color-white);
+  color: var(--color-accent);
+  margin-top: 72px;
+}
+.faq-contents {
+  max-width: 1000px;
+  margin-inline: auto;
+}
